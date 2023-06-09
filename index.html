@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="./main.css" rel="stylesheet" type="text/css">
+        <script defer src="./app.js" type="text/javascript"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+        <title>Awesome Calc</title>
+    </head>
+    <body>
+        <div id="main_container">
+            <div id="calculator_body">
+                <input type="text" name="calc_display" id="calc_display" value="0" maxlength="8" disabled><!--The "pattern" attribute will enforce regular expresion of numbers only. This was used because maxlength does not work on "number" type inputs-->
+                <div id=keys_container>
+                    <button id="key_cancel_curr_num" class="keys action_keys">CE</button>
+                    <button id="key_cancel" class="keys action_keys">C</button>
+                    <button class="keys null_keys" disabled></button>
+                    <button class="keys null_keys" disabled></button>
+
+                    <button id="key_1" class="keys num_keys">1</button>
+                    <button id="key_2" class="keys num_keys">2</button>
+                    <button id="key_3" class="keys num_keys">3</button>
+                    <button id="key_add" class="keys operator_keys">+</button>
+
+                    <button id="key_4" class="keys num_keys">4</button>
+                    <button id="key_5" class="keys num_keys">5</button>
+                    <button id="key_6" class="keys num_keys">6</button>
+                    <button id="key_sub" class="keys operator_keys">-</button>
+
+                    <button id="key_7" class="keys num_keys">7</button>
+                    <button id="key_8" class="keys num_keys">8</button>
+                    <button id="key_9" class="keys num_keys">9</button>
+                    <button id="key_mult" class="keys operator_keys">x</button>
+
+                    <button id="key_dot" class="keys num_keys">.</button>
+                    <button id="key_0" class="keys num_keys">0</button>
+                    <button id="key_result" class="keys action_keys">=</button>
+                    <button id="key_div" class="keys operator_keys">/</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer><p>Copyright © 2023 <a class="developer_link" href="../kays-portfolio-website">Simeon Olukayode Adeoye (Kay)</a> - All Rights Reserved</p></footer>
+    </body>
+</html>

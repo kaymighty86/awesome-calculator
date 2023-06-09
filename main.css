@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#main_container{
+    background-image: url("./images/pencil_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+#calculator_body{
+    width: 260px;
+    background-color: #32373b;
+    padding-top: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#calc_display{
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: white;
+    text-align: right;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor:text;
+}
+
+#calc_display:disabled{
+    background-color: white;
+    color: black;
+}
+
+#keys_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.keys{
+    height: 60px;
+    border: none;
+    background-color: #32373b;
+    font-size: 14px;
+    color: white;
+}
+.keys:focus{
+    outline: none;
+}
+
+.null_keys{
+    background-color: inherit;
+}
+.null_keys:disabled{
+    background-color: inherit;
+}
+
+.num_keys{
+    background-color: #32373b;
+    font-weight: 300;
+}
+
+.operator_keys{
+    background-color: #32811e;
+}
+
+.action_keys{
+    background-color: #495055;
+}
+
+.num_keys:hover,.action_keys:hover{
+    background-color: #595d61;
+}
+.num_keys:active,.action_keys:active{
+    background-color: #32373b;
+}
+
+.operator_keys:hover{
+    background-color: rgb(233, 236, 39);
+}
+
+.operator_keys:active{
+    background-color: #32811e;
+}
+
+.operator_key_clicked{
+    background-color: rgb(233, 236, 39);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    font-size: medium;
+    text-align: center;
+}
+
+footer p{
+    margin: 0px;
+    font-size: small;
+}
+
+.developer_link{
+    font-weight: bold;
+    color: inherit;
+}
+
+@media screen and (max-width: 1000px){
+    
+    #calculator_body{
+        width: 80%;
+        border-radius: 10px;
+        padding-top: 15px;
+    }
+
+    #calc_display{
+        width: 100%;
+        height: 20vh;
+        max-height: 170px;
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .keys{
+        height: 10vh;
+        max-height: 180px;
+        font-size: 4vw;
+    }
+}
