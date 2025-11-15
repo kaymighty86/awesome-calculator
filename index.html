@@ -12,7 +12,10 @@
     <body>
         <div id="main_container">
             <div id="calculator_body">
-                <input type="text" name="calc_display" id="calc_display" value="0" maxlength="8" disabled><!--The "pattern" attribute will enforce regular expresion of numbers only. This was used because maxlength does not work on "number" type inputs-->
+                <!-- <input type="text" name="calc_display" id="calc_display" value="0" maxlength="8" disabled>The "pattern" attribute will enforce regular expresion of numbers only. This was used because maxlength does not work on "number" type inputs -->
+                <div id="calc_display">
+                    <p>0</p>
+                </div>
                 <div id=keys_container>
                     <button id="key_cancel_curr_num" class="keys action_keys">CE</button>
                     <button id="key_cancel" class="keys action_keys">C</button>
@@ -34,7 +37,7 @@
                     <button id="key_9" class="keys num_keys">9</button>
                     <button id="key_mult" class="keys operator_keys">x</button>
 
-                    <button id="key_dot" class="keys num_keys">.</button>
+                    <button id="key_dot" class="keys num_keys">•</button>
                     <button id="key_0" class="keys num_keys">0</button>
                     <button id="key_result" class="keys action_keys">=</button>
                     <button id="key_div" class="keys operator_keys">/</button>

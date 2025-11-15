@@ -187,7 +187,7 @@ function clearCurrentNumber_Pressed(){//triggered by the "CE" key
 
 function updateDisplay(value){
     //to enable us add comma to the number being displayed
-    calc_display.value = commalise(value);
+    calc_display.children.item(0).innerHTML = commalise(value);
 }
 
 var commalise = (value) => {
